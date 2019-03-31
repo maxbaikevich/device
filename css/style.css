@@ -1,0 +1,127 @@
+
+@font-face {
+	font-weight:700;
+	font-family:"Gilroy ExtraBold";
+	font-style:normal;
+	src:url(.."/fonts/gilroyextrabold.woff") format("woff"),
+	url(.."/fonts/gilroyextrabold.woff2") format("woff2")
+}
+@font-face {
+	font-weight:lighter;
+	font-family:"Gilroy Light";
+	font-style:normal;
+	src:url(.."/fonts/gilroylight.woff") format("woff"),
+	url(.."/fonts/gilroylight.woff2") format("woff2")
+}
+@font-face {
+	font-weight:400;
+	font-family:"Open Sans";
+	font-style:normal;
+	src:url(.."/fonts/opensans.woff") format("woff"),
+	url(.."/fonts/opensans.woff2") format("woff2")
+}
+@font-face {
+	font-weight:lighter;
+	font-family:"Open Sans Light";
+	font-style:normal;
+	src:url(.."/fonts/opensanslight.woff") format("woff"),
+	url(.."/fonts/opensanslight.woff2") format("woff2")
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight:400;
+
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	clip: rect(0, 0, 0, 0);
+}
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.main-header {
+	background-color: #f7e296;
+	margin-top: 40px;
+}
+
+ .main-navigatin {
+	position: relative;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+.logo {
+	position: absolute;
+	top: -25px;
+	left: 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#000000;
+	font-family:"Gilroy ExtraBold",'Helvetica', sans-serif;
+	letter-spacing:.01em;
+	font-size: 48px;
+	line-height: 48px;
+	font-weight: 900;
+	margin-left: -5px;
+}
+
+.user-navigation {
+	padding-top: 44px;
+	list-style: none;
+	text-decoration: none;
+	display: flex;
+}
+
+.user-navigation-link {
+	text-decoration: none;
+	color: #000000;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.user-navigation-item {
+	flex-grow: 2;
+}
+
+.search-input {
+	width: 355px;
+	border: none;
+	background-color: #f7e296;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.search-input:focus{
+	width: 355px;
+	border: none;
+	border-bottom: 2px solid #000000;
+	background-color: #f7e296;
+	font-size: 15px;
+	line-height: 30px;
+}
+.search-button {
+	display: none;
+	width: 85px;
+	min-height: 49px;
+	margin-left: -4px;
+	background-color: #f7e296;
+	border: 2px solid #000;
+	outline: none;
+	cursor: pointer;
+
+}
+ .search-input:focus .search-button  {
+	display: block;
+}
